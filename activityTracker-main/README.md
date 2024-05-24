@@ -17,3 +17,12 @@ Features:
 Track Activity: The extension tracks the time spent on each website and provides detailed analytics.
 Productive Browsing: Users can add websites to a restricted list and set time limits for them.
 Personalized Dashboard: Access your website usage statistics and analytics in a personalized dashboard.
+
+#Output Screen shots
+![image](https://github.com/shreyakjr10/Elitmus_final/assets/96543077/4d98fde9-bfdc-463e-b836-903a82c51cd2)
+![image](https://github.com/shreyakjr10/Elitmus_final/assets/96543077/0997e272-8970-4130-b8e1-f03bb2223c4e)
+![image](https://github.com/shreyakjr10/Elitmus_final/assets/96543077/90b7b194-dc65-429b-9872-44d89670ec34)
+
+
+
+
