@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Activity Options</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="ks.css" rel="stylesheet">
+        <link href="clockpicker.css" rel="stylesheet">
+        <link href="standalone.css" rel="stylesheet">
+        <script defer src="jquery-3.5.1.slim.js"></script>
+        <script defer src="clockpicker.js"></script>
+        <script defer src="temp.js"></script>
+        <script defer src="tabs.js"></script>
+        <script defer src="functions.js"></script>
+        <script defer src="options.js"></script>
+        <style>
+            .card-header {
+                font-weight: bold;
+                background-color: #f8f9fa;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container my-3">
+            <div id="alert" class="alert alert-warning" role="alert"></div>
+        </div>
+
+        <div class="container my-3">
+            <div class="card">
+                <div class="card-header">
+                    Blocklisted Domains inlcuded
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ul id="textArea" class="list-group" size="15"></ul>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-start">
+                            <button class="btn btn-outline-danger w-100" id="resetBL">
+                                <i class="bi bi-x-circle"></i> Clear Blacklist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-3">
+            <div class="card">
+                <div class="card-header">
+                    Add a New Blocklist Entry
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-2">
+                            <input type="text" id="blacklist" class="form-control" placeholder="Enter Site to be blacklisted" aria-label="Blacklist Domain">
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <input type="text" id="time" class="form-control" placeholder="Enter Time (hh:mm)" data-default="20:48" aria-label="Time Limit">
+                        </div>
+                        <div class="col-md-2 mb-2 d-grid">
+                            <button type="button" class="btn btn-light" id="sub" aria-label="Pick Time">
+                                ⏲️
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-grid">
+                            <button type="button" class="btn btn-primary" id="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-3">
+            <div class="card">
+                <div class="card-header">
+                    Daily Reset Time
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-2">
+                            <input type="text" id="resetTime" class="form-control" placeholder="Daily Reset Time (hh:mm)" data-default="20:48" aria-label="Daily Reset Time">
+                        </div>
+                        <div class="col-md-4 mb-2 d-grid">
+                            <button type="button" class="btn btn-light" id="sub1" aria-label="Pick Reset Time">
+                                🕘
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-grid">
+                            <button type="button" class="btn btn-primary" id="submitTime">
+                                Submit Time
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-3">
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn-warning" id="reset">
+                    initialise today's data
+                </button>
+                <button type="button" class="btn btn-danger" id="resetAll">
+                    initialise all data
+                </button>
+            </div>
+        </div>
+
+        <!-- Bootstrap Icons CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/font/bootstrap-icons.min.js" integrity="sha512-ES43W4UjYmxP7AKAkPCclN2WoF0vPbfLb27sw66UMbEFrt9O9I+XL9opO1/+jWRTm1CObzWc72+U0kMgMa4+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>

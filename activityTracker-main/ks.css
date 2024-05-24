@@ -1,0 +1,59 @@
+/* Body styling */
+body#recbody {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Extension title styling */
+#extensionTitle {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+#extensionTitle p.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#extensionTitle .btn {
+    border: 1px solid white;
+}
+
+/* Button group styling */
+#buttons .btn {
+    font-size: 16px;
+    border-radius: 0;
+    padding: 10px;
+}
+
+#buttons .btn.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+#buttons .btn:not(.active) {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Container styling */
+#display .container {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+hr {
+    border-top: 1px solid #dee2e6;
+}
+
+/* Canvas styling */
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto;
+    display: block;
+}
